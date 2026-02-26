@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: bambulab-mqtt
+Version: 0.1.0
+Summary: A simple Python MQTT client for Bambu Lab printers
+Author: William
+License: MIT
+Project-URL: Homepage, https://github.com/Willgob/Bambulab-MQTT-python-library
+Project-URL: Repository, https://github.com/Willgob/Bambulab-MQTT-python-library
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: paho-mqtt>=1.6.1
+
+# Bambulab MQTT python library
+A library for bambulab printers with mqtt
