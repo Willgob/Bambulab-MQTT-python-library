@@ -21,7 +21,7 @@ class BambulabPrinter:
         
     def _on_connect(self, client, userdata, flags, rc):
         if rc == 0:
-            topic = f"device/{self.serial}/status"
+            topic = f"device/{self.serial}/report"
             client.subscribe(topic)
             self.connected = True
         else:
@@ -36,7 +36,7 @@ class BambulabPrinter:
                 if key not in self.latest_status:
                     self.latest_status[key] = value
                 else:
-                    if ininstance(value, dict):
+                    if isinstance(value, dict):
                         self.latest_status[key].update(value)
                     else:
                         self.latest_status[key] = value
