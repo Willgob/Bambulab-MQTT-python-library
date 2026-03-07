@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: bambulab-mqtt
-Version: 1.0.0
+Version: 1.0.1
 Summary: A simple Python MQTT client for Bambu Lab printers
 Author: William
 License: MIT
