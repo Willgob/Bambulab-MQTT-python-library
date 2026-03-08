@@ -5,8 +5,11 @@ import time, random, string
 import os
 import threading
 
+from .commands import CommandsMixin
+from .properties import PropertiesMixin
+
     
-class BambulabPrinter:
+class BambulabPrinter(CommandsMixin, PropertiesMixin):
     def __init__ (self, ip, access_code, serial):
         self.printer_ip = ip
         self.printer_serial = serial
